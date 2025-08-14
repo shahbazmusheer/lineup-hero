@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      If you are serving your web app in a path other than the root, change the
+      href value below to reflect the base path you are serving from.
+
+      The path provided below has to start and end with a slash "/" in order for
+      it to work correctly.
+
+      For more details:
+      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+      This is a placeholder for base href that will be replaced by the value of
+      the `--base-href` argument provided to `flutter build`.
+    -->
+    <base href="/web/">
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A new Flutter project.">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="gaming_web_app">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <title>gaming_web_app</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <meta content="IE=Edge" http-equiv="X-UA-Compatible">-->
+<!--  <meta name="description" content="A new Flutter project.">-->
+
+<!--  &lt;!&ndash; iOS meta tags & icons &ndash;&gt;-->
+<!--  <meta name="apple-mobile-web-app-capable" content="yes">-->
+<!--  <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+<!--  <meta name="apple-mobile-web-app-title" content="flutter_stripe_demo">-->
+<!--  <link rel="apple-touch-icon" href="icons/Icon-192.png">-->
+
+<!--  &lt;!&ndash; Favicon &ndash;&gt;-->
+<!--  <link rel="icon" type="image/png" href="favicon.png"/>-->
+
+<!--  <title>flutter_stripe_demo</title>-->
+<!--  <link rel="manifest" href="manifest.json">-->
+
+<!--  &lt;!&ndash; Stripe.js library &ndash;&gt;-->
+<!--  <script src="https://js.stripe.com/v3/"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<p>Redirecting to Stripe...</p>-->
+
+<!--&lt;!&ndash; ✅ Flutter bootstraps service worker from flutter.js &ndash;&gt;-->
+<!--<script src="flutter.js" defer></script>-->
+
+<!--&lt;!&ndash; Your compiled Flutter app code &ndash;&gt;-->
+<!--<script src="main.dart.js" type="application/javascript"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html>&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;  <base href="/web/">&ndash;&gt;-->
+
+<!--&lt;!&ndash;  <meta charset="UTF-8">&ndash;&gt;-->
+<!--&lt;!&ndash;  <meta content="IE=Edge" http-equiv="X-UA-Compatible">&ndash;&gt;-->
+<!--&lt;!&ndash;  <meta name="description" content="A new Flutter project.">&ndash;&gt;-->
+
+<!--&lt;!&ndash;  &lt;!&ndash; iOS meta tags & icons &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;  <meta name="mobile-web-app-capable" content="yes">&ndash;&gt;-->
+<!--&lt;!&ndash;  <meta name="apple-mobile-web-app-status-bar-style" content="black">&ndash;&gt;-->
+<!--&lt;!&ndash;  <meta name="apple-mobile-web-app-title" content="gaming_web_app">&ndash;&gt;-->
+<!--&lt;!&ndash;  <link rel="apple-touch-icon" href="icons/Icon-192.png">&ndash;&gt;-->
+
+<!--&lt;!&ndash;  &lt;!&ndash; Favicon &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;  <link rel="icon" type="image/png" href="favicon.png"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;  &lt;!&ndash; Stripe JS &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;  <script src="https://js.stripe.com/v3/"></script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;  <title>gaming_web_app</title>&ndash;&gt;-->
+<!--&lt;!&ndash;  <link rel="manifest" href="manifest.json">&ndash;&gt;-->
+
+<!--&lt;!&ndash;  <style>&ndash;&gt;-->
+<!--&lt;!&ndash;    #stripe-container {&ndash;&gt;-->
+<!--&lt;!&ndash;      margin: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+
+<!--&lt;!&ndash;#payment-dialog {&ndash;&gt;-->
+<!--&lt;!&ndash;  display: none;&ndash;&gt;-->
+<!--&lt;!&ndash;  position: fixed;&ndash;&gt;-->
+<!--&lt;!&ndash;  top: 10px; /* closer to top */&ndash;&gt;-->
+<!--&lt;!&ndash;  left: 50%;&ndash;&gt;-->
+<!--&lt;!&ndash;  transform: translateX(-50%);&ndash;&gt;-->
+<!--&lt;!&ndash;  width: 90%;&ndash;&gt;-->
+<!--&lt;!&ndash;  max-width: 400px;&ndash;&gt;-->
+<!--&lt;!&ndash;  background-color: #323232;&ndash;&gt;-->
+<!--&lt;!&ndash;  color: white;&ndash;&gt;-->
+<!--&lt;!&ndash;  padding: 12px 24px;&ndash;&gt;-->
+<!--&lt;!&ndash;  border-radius: 8px;&ndash;&gt;-->
+<!--&lt;!&ndash;  z-index: 99999; /* very high */&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: sans-serif;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-size: 16px;&ndash;&gt;-->
+<!--&lt;!&ndash;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);&ndash;&gt;-->
+
+<!--&lt;!&ndash;  opacity: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;  transition: opacity 0.3s ease;&ndash;&gt;-->
+<!--&lt;!&ndash;  pointer-events: auto; /* make sure it can be interacted with if needed */&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;#payment-dialog.show {&ndash;&gt;-->
+<!--&lt;!&ndash;  display: block;&ndash;&gt;-->
+<!--&lt;!&ndash;  opacity: 1;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;  </style>&ndash;&gt;-->
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash; Stripe UI container &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<div id="stripe-container">&ndash;&gt;-->
+<!--&lt;!&ndash;  <div id="card-element"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;  <div id="card-errors" role="alert" style="color: red; margin-top: 10px;"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;  <button onclick="payWithCard()" style="margin-top: 10px;">Pay</button>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash; Custom payment dialog &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<div id="payment-dialog"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;  const stripe = Stripe('pk_test_51RJ5ROQ7VW5LvG1xARfelRNNUG4uPYklS38PwEuZbH8zi1u8J4jobsmmQpWjPj9mYJ9iU2z2Bo3TfC7IUFDyEYLb00Gi3NvWQA'); // Your key&ndash;&gt;-->
+<!--&lt;!&ndash;  const elements = stripe.elements();&ndash;&gt;-->
+<!--&lt;!&ndash;  const card = elements.create('card');&ndash;&gt;-->
+<!--&lt;!&ndash;  card.mount('#card-element');&ndash;&gt;-->
+
+<!--&lt;!&ndash;  function showPaymentDialog(message, isSuccess = true) {&ndash;&gt;-->
+<!--&lt;!&ndash;    const dialog = document.getElementById("payment-dialog");&ndash;&gt;-->
+<!--&lt;!&ndash;    dialog.style.backgroundColor = isSuccess ? "#4CAF50" : "#f44336"; // Green or Red&ndash;&gt;-->
+<!--&lt;!&ndash;    dialog.textContent = message;&ndash;&gt;-->
+
+<!--&lt;!&ndash;    dialog.style.display = "block";   // Make visible immediately&ndash;&gt;-->
+<!--&lt;!&ndash;    dialog.classList.add("show");     // Add fade-in class&ndash;&gt;-->
+
+<!--&lt;!&ndash;    // Hide after 4 seconds with fade-out&ndash;&gt;-->
+<!--&lt;!&ndash;    setTimeout(() => {&ndash;&gt;-->
+<!--&lt;!&ndash;      dialog.classList.remove("show");&ndash;&gt;-->
+<!--&lt;!&ndash;      setTimeout(() => {&ndash;&gt;-->
+<!--&lt;!&ndash;        dialog.style.display = "none";&ndash;&gt;-->
+<!--&lt;!&ndash;      }, 300);  // fade out duration matches CSS&ndash;&gt;-->
+<!--&lt;!&ndash;    }, 4000);&ndash;&gt;-->
+<!--&lt;!&ndash;  }&ndash;&gt;-->
+
+<!--&lt;!&ndash;  async function payWithCard() {&ndash;&gt;-->
+<!--&lt;!&ndash;    const clientSecret = window.clientSecretFromFlutter;&ndash;&gt;-->
+<!--&lt;!&ndash;    const amount = window.amountFromFlutter;&ndash;&gt;-->
+
+<!--&lt;!&ndash;    // Clear previous errors&ndash;&gt;-->
+<!--&lt;!&ndash;    document.getElementById("card-errors").textContent = "";&ndash;&gt;-->
+
+<!--&lt;!&ndash;    if (!clientSecret) {&ndash;&gt;-->
+<!--&lt;!&ndash;      showPaymentDialog("❌ Client secret not found. Please retry.", false);&ndash;&gt;-->
+<!--&lt;!&ndash;      return;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+
+<!--&lt;!&ndash;    // Show waiting message immediately&ndash;&gt;-->
+<!--&lt;!&ndash;    showPaymentDialog("⏳ Waiting for payment...");&ndash;&gt;-->
+
+<!--&lt;!&ndash;    try {&ndash;&gt;-->
+<!--&lt;!&ndash;      const result = await stripe.confirmCardPayment(clientSecret, {&ndash;&gt;-->
+<!--&lt;!&ndash;        payment_method: {&ndash;&gt;-->
+<!--&lt;!&ndash;          card: card,&ndash;&gt;-->
+<!--&lt;!&ndash;          billing_details: {&ndash;&gt;-->
+<!--&lt;!&ndash;            name: 'Test User',&ndash;&gt;-->
+<!--&lt;!&ndash;            email: 'test@example.com'&ndash;&gt;-->
+<!--&lt;!&ndash;          }&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;      });&ndash;&gt;-->
+
+<!--&lt;!&ndash;      if (result.error) {&ndash;&gt;-->
+<!--&lt;!&ndash;        document.getElementById("card-errors").textContent = result.error.message;&ndash;&gt;-->
+<!--&lt;!&ndash;        showPaymentDialog("❌ " + result.error.message, false);&ndash;&gt;-->
+<!--&lt;!&ndash;      } else if (result.paymentIntent && result.paymentIntent.status === 'succeeded') {&ndash;&gt;-->
+<!--&lt;!&ndash;        showPaymentDialog("✅ Payment of $" + (amount / 100).toFixed(2) + " successful!");&ndash;&gt;-->
+<!--&lt;!&ndash;      } else {&ndash;&gt;-->
+<!--&lt;!&ndash;        showPaymentDialog("⚠️ Payment status: " + (result.paymentIntent?.status || "unknown"), false);&ndash;&gt;-->
+<!--&lt;!&ndash;      }&ndash;&gt;-->
+<!--&lt;!&ndash;    } catch (e) {&ndash;&gt;-->
+<!--&lt;!&ndash;      showPaymentDialog("❌ Payment error: " + (e.message || e), false);&ndash;&gt;-->
+<!--&lt;!&ndash;      document.getElementById("card-errors").textContent = e.message || e;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;  }&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash; Flutter app script &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="flutter_bootstrap.js" async></script>&ndash;&gt;-->
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->

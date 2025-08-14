@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# If an existing asset or directory is requested go to it as it is
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+
+# If the requested resource doesn't exist, serve index.html
+# This ensures that all your Flutter routes are handled by your app
+RewriteRule ^(.*)$ index.html [NC,L]
