@@ -16,9 +16,9 @@ class AdminSeeder extends Seeder
     {
         $admins = [
             [
-                'name' => "Lineup Admin",
-                'email' => 'admin@lineup.com',
-                'password' => Hash::make('12345678')
+                'name' => "",
+                'email' => '',
+                'password' => Hash::make('PASSWORD')
             ],
         ];
 
